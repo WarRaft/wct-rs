@@ -1,0 +1,18 @@
+[package]
+name = "wct-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Reader and writer for Warcraft III custom script files (war3map.wct)"
+license = "CC0-1.0"
+
+[[bin]]
+name = "wct-rs"
+path = "src/main.rs"
+
+[lib]
+name = "wct_rs"
+path = "src/lib.rs"
+
+[dependencies]
+parser-rs = { path = "../parser-rs" }
+bni-rs = { path = "../bni-rs" }
